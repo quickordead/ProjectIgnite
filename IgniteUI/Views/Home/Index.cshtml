@@ -1,0 +1,34 @@
+﻿@{
+    Layout = "~/Views/Shared/_IgniteLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div class="col-md-12">
+        <div class="jumbotron">
+            <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><img src="~/Images/Logo16.png" /> Know More About </span>
+                        <input class="form-control" id="txtDestination" type="text">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" id="btnSearch" type="button" onclick="">Go</button>
+                        </span>
+                    </div>
+</div>
+        </div>
+</body>
+</html>
+<script>
+    function GenerateURI() {
+        var destination = document.getElementById("txtDestination").innerHTML;
+        var URI = "http://en.wikipedia.org/w/api.php?action=query&prop=extracts&titles=" + destination + "&format=json&exintro=1";
+        FetchData(URI);
+    }
+
+</script>

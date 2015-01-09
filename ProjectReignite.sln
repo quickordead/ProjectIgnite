@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IgniteUI", "IgniteUI\IgniteUI.csproj", "{87E039CD-847E-4691-B481-17AC8B70649F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IgniteUI.Tests", "IgniteUI.Tests\IgniteUI.Tests.csproj", "{8BF52F98-426C-4E07-A6CC-F708E6B86154}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87E039CD-847E-4691-B481-17AC8B70649F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E039CD-847E-4691-B481-17AC8B70649F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E039CD-847E-4691-B481-17AC8B70649F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E039CD-847E-4691-B481-17AC8B70649F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF52F98-426C-4E07-A6CC-F708E6B86154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF52F98-426C-4E07-A6CC-F708E6B86154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF52F98-426C-4E07-A6CC-F708E6B86154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF52F98-426C-4E07-A6CC-F708E6B86154}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

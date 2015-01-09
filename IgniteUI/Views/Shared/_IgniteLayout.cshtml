@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="@Url.Content("~/Contents/bootstrap.min.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">IGNITE</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-inverse-collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("About", "Index", "Home")</li>
+            </ul>
+            </ul>
+        </div>
+    </div>
+    @RenderBody()
+    </div>
+</body>
+</html>
